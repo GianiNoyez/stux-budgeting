@@ -1,14 +1,59 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>StuxBudgeting</title>
+  <title>Stux Budgeting</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
 </head>
+
 <body>
-  <app-root></app-root>
+  <ul id="dropdown-account" class="dropdown-content">
+      <li><a href="#!">Login</a></li>
+      <li><a href="#!">Register</a></li>
+  </ul>
+  <nav class="light-blue lighten-1 " role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Stux Budgeting</a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#">Navbar Link</a>
+        </li>
+        <li>
+          <a class="dropdown-trigger" href="#!" data-target="dropdown-account">
+            Account <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="#">Navbar Link</a>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+  <div class="container">
+      <app-root></app-root>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="assets/js/index.js"></script>
+
 </body>
 </html>
