@@ -1,0 +1,15 @@
+<p>
+  transaction-list works!
+</p>
+<table>
+  <thead>
+      <th>Value</th>
+      <th>Description</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.value }}</td>
+      <td>{{ transaction.description }} {{ transaction.id }}</td>
+    </tr>
+  </tbody>
+</table>
