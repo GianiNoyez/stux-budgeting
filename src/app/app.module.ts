@@ -6,11 +6,13 @@ import { CdkTableModule } from '@angular/cdk/table'
 
 import { AppComponent } from './app.component';
 import { TransactionListComponent } from './transaction-list/transaction-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TransactionListComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
